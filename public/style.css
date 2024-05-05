@@ -104,3 +104,8 @@ li {
 #recordingsList{
 	max-width: 28em;
 }
+#audioPlayer {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

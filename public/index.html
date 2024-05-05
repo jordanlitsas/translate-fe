@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+  </head>
+  <body>
+  
+    <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="stopButton" disabled>Stop</button>
+     <input type="text" id="request-lang-selector">
+     <input type="text" id="response-lang-selector">
+
+    </div>
+    <audio controls autoplay id="audioPlayer">
+      Your browser does not support the audio element.
+    </audio>
+    <div class = "row">
+      <div class = "col s6">
+        <div class = "row card">
+          <div class = "col s12 grey-blue card-content" id = "you-table">
+            <span class="card-title">you</span>
+           
+          </div>
+        </div>
+      </div>
+      <div class = "col s6">
+        <div class = "row card">
+          <div class = "col s12 grey-blue card-content"  id = "teacher-table">
+            <span class="card-title">teacher</span>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<script src="js/recorder.js"></script>
+  	<script src="js/app.js"></script>
+  </body>
+</html>
